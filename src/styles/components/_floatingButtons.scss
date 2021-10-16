@@ -1,0 +1,84 @@
+.adminActions {
+    position: fixed;
+    bottom: 35px; right: 35px;
+    // display: flex;
+    // flex-direction: column;
+
+  }
+  
+    .saveButton {
+      height: 60px;
+      width: 60px;
+      background-color: #29b95f;      
+      border-radius: 50%;
+      display: block;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      margin-bottom: 5px;
+      z-index: 1;
+      transition: color .3s ease;
+
+      &:hover{
+        cursor: pointer;
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: darken($color: #29b95f, $amount: 5);
+       
+    }
+    }
+
+    .deleteButton {
+        height: 60px;
+        width: 60px;
+        background-color: #f04b6a;
+        border-radius: 50%;
+        display: block;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        transition: color .3s ease;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+            background-color: darken($color: #f04b6a, $amount: 5);
+           
+        }
+      }
+
+      .imageButton {
+        margin-bottom: 5px;
+        height: 60px;
+        width: 60px;
+        background-color: $secondary;
+        border-radius: 50%;
+        display: block;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        transition: color .3s ease;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+            background-color: darken($color: $secondary, $amount: 5);
+           
+        }
+        
+      }
+  
+     
+    
+  
+   
+        .adminActions div i {
+          position: absolute;
+          top: 50%; left: 50%;
+          transform: translate(-50%, -50%);
+        }
+  
+    
+  
+     

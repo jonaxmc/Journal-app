@@ -1,0 +1,99 @@
+
+.auth__main{
+    display: flex;
+    align-items: center;
+    background-color: $secondary;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.auth__box-container{
+    background-color: white;
+    box-shadow: 0px 1px $dark-grey;
+    border-radius: 5px;
+    padding: 50px;
+    width: 350px;
+    // height: 400px;
+ 
+}
+
+
+
+.auth__title{
+    color: $secondary;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+
+.auth__input{
+    margin-top: 5px;
+    color: $dark-grey;
+    border: 2px solid $light-grey;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: border-bottom .3s ease;
+
+    &:focus{
+        border: 2px solid $primary;
+        outline: none;
+    }
+}
+
+.auth__or{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+    color: darken($color: $light-grey, $amount: 15);
+}
+
+.linea {
+    margin:0px 10px;
+    width: 30%;    
+    border-top:2px dashed darken($color: $light-grey, $amount: 10);
+    position: relative;
+    top:10px;
+    float:left;
+    }
+  
+  .leyenda {
+    font-weight:400;
+    float:left;
+   }
+
+.auth__create-account{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    color: darken($color: $light-grey, $amount: 30);
+}
+
+.auth__social-networks{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+}
+
+.auth__alert-error{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
